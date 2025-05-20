@@ -1,0 +1,34 @@
+Main.yml
+name: Build and Push Docker image
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout código
+      uses: actions/checkout@v2
+
+    - name: Login a Docker Hub
+      uses: docker/login-action@v2
+      with:
+        username: PatriciaRivas1324
+        password:dckr_pat_Jdemn9sypaI_BcLZfooHY4qBMe0
+
+
+        
+    - name: Build y Push de la imagen
+      uses: docker/build-push-action@v3
+      with:
+        push: true
+        tags: PatriciaRivas1324
+
+
+
+
+        
