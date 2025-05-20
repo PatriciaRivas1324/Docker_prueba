@@ -25,7 +25,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-            tags: PatriciaRivas1324/Docker_ejemplo:latest
+        tags: PatriciaRivas1324/Docker_ejemplo:latest
 
 
 
