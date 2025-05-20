@@ -18,7 +18,7 @@ jobs:
       uses: docker/login-action@v2
       with:
         username: PatriciaRivas1324
-        password:dckr_pat_Jdemn9sypaI_BcLZfooHY4qBMe0
+        password: dckr_pat_Jdemn9sypaI_BcLZfooHY4qBMe0
 
 
         
@@ -26,7 +26,8 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: PatriciaRivas1324
+            tags: PatriciaRivas1324/miimagen:latest
+
 
 
 
