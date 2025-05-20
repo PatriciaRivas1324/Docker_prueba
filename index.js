@@ -5,7 +5,7 @@ function suma(a, b) {
 }
 
 http.createServer((req, res) => {
-  res.end('Hola w'); //Cambiar aqui
+  res.end('Hola, bienvenido a Docker'); 
 }).listen(3000);
 
 module.exports = { suma };
